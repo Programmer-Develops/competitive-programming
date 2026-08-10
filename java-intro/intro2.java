@@ -1,5 +1,17 @@
 import java.util.*;
 
+// Note: public static funcName() {} is a function which can be called without creating an object of the class. It is also called a static method.
+//       the public is called there to make the function accessible from anywhere. If we remove public, then the function will be accessible only within the class.
+//       if the function called with public static funcName() {}, then it can be called without creating an object of the class. If we remove static, then the function can only be called by creating an object of the class.
+//       
+//       nextInt() -> for integer input
+//       nextLine() -> for string input
+//       nextDouble() -> for double input
+//       nextFloat() -> for float input
+//       next() -> for char input
+//       nextBoolean() -> for boolean input
+
+
 // Calculator
 // class Calc {
 //     public static void main(String[] args) {
