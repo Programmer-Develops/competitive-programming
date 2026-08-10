@@ -74,22 +74,48 @@ import java.util.*;
 
 
 // factorial
-class Fact {
+// class Fact {
+//     public static void main(String[] args) {
+//         Scanner Input = new Scanner(System.in);
+//         int X = Input.nextInt();
+//         fact(X);
+//     }
+
+//     public static void fact(int X) {
+//         for(int i=1; i <= X; i++)
+//         {
+//             int fact = 1;
+//             for(int j=1; j <= i; j++)
+//             {
+//                 fact = fact * j;
+//             }
+//             System.out.println("Factorial of " + i + " is => " + fact);
+//         }
+//     }
+// }
+
+
+// getting sum of ArrayList
+class AS {
     public static void main(String[] args) {
+        // int arr[] = [1,2,3,5,6];
         Scanner Input = new Scanner(System.in);
-        int X = Input.nextInt();
-        fact(X);
+        int n = Input.nextInt();
+        ArrayList<Integer> arr = new ArrayList<>();
+
+        for(int i = 1; i<=n; i++) {
+            arr.add(i);
+        }
+
+        aSum(arr);
     }
 
-    public static void fact(int X) {
-        for(int i=1; i <= X; i++)
-        {
-            int fact = 1;
-            for(int j=1; j <= i; j++)
-            {
-                fact = fact * j;
-            }
-            System.out.println("Factorial of " + i + " is => " + fact);
+    public static void aSum(ArrayList<Integer> arr) {
+        int sum = 0;
+        for(int i = 0; i < arr.size(); i++ ) {
+            sum += arr.get(i);
         }
+        System.out.println(sum);
     }
+
 }
