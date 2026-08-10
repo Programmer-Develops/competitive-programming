@@ -49,25 +49,47 @@ import java.util.*;
 
 
 // Increasing/Decreasing Function
-class AD {
+// class AD {
+//     public static void main(String[] args) {
+//         Scanner Input = new Scanner(System.in);
+//         int X = Input.nextInt();
+//         Increasing(X);
+//         Decreasing(X);
+//     }
+
+//     public static void Increasing(int X) {
+//         for(int i=1; i <= X; i++)
+//         {
+//             System.out.println("Increasing => " + i);
+//         }
+//     }
+
+//     public static void Decreasing(int X) {
+//         for(int i=X; i >= 1; i--)
+//         {
+//             System.out.println("Decreasing => " + i);
+//         }
+//     }
+// }
+
+
+// factorial
+class Fact {
     public static void main(String[] args) {
         Scanner Input = new Scanner(System.in);
         int X = Input.nextInt();
-        Increasing(X);
-        Decreasing(X);
+        fact(X);
     }
 
-    public static void Increasing(int X) {
+    public static void fact(int X) {
         for(int i=1; i <= X; i++)
         {
-            System.out.println("Increasing => " + i);
-        }
-    }
-
-    public static void Decreasing(int X) {
-        for(int i=X; i >= 1; i--)
-        {
-            System.out.println("Decreasing => " + i);
+            int fact = 1;
+            for(int j=1; j <= i; j++)
+            {
+                fact = fact * j;
+            }
+            System.out.println("Factorial of " + i + " is => " + fact);
         }
     }
 }
