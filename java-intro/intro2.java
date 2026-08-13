@@ -125,7 +125,7 @@ import java.util.*;
 
 class arraySum {
     public static void main(String[] args) {
-        Scanner Input = new Scanner(System.in);
+        Scanner Input = new Scanner(System.in); // we write System.in because we want to take input from the user. If we write System.out, then it will print the output on the console. If we write System.err, then it will print the error on the console.
         ArrayList<Integer> arr = new ArrayList<>();
 
         int n = Input.nextInt();
