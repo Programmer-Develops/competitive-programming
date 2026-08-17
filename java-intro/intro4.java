@@ -7,12 +7,16 @@ class cd {
     }
 
     public static int countd(int a) {
-        int count = 0;
-        // count integers in input a
-        while(a != 0) {
-            count += 1;
-            a = a/10;
-        }
-        return count;
+        // int count = 0;
+        // // count integers in input a
+        // while(a != 0) {
+        //     count += 1;
+        //     a = a/10;
+        // }  
+        // return count;
+
+        if (a <= 0) return 0;
+
+        return 1 + countd(a/10);
     }
 }
